@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Form — Privatlivspolitik</title>
+<meta name="description" content="Privatlivspolitik for Form, den danske kost-, vægt- og kropsapp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500&family=Hanken+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #F1EBDF;
+    --ink: #2B2730;
+    --muted: #6b6470;
+    --sage: #6F8A66;
+    --sage-deep: #57713F;
+    --sage-soft: #E4EADA;
+    --plum: #8A5A72;
+    --plum-soft: #EEE0E7;
+    --line: rgba(43,39,48,0.14);
+    --card: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #1C1A17;
+      --ink: #F1EBDF;
+      --muted: #a89fae;
+      --sage: #8FAE84;
+      --sage-deep: #7A9A70;
+      --sage-soft: #2E3A29;
+      --plum: #B07A94;
+      --plum-soft: #3A2530;
+      --line: rgba(241,235,223,0.14);
+      --card: #242024;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Hanken Grotesk", -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+  header.hero {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 12px;
+  }
+  .mark {
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    background: var(--sage-deep);
+    flex: none;
+  }
+  .mark svg { width: 100%; height: 100%; display: block; }
+  h1 {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 500;
+    font-size: 28px;
+    margin: 0;
+    color: var(--ink);
+  }
+  .hero p {
+    margin: 2px 0 0;
+    color: var(--muted);
+    font-size: 14px;
+  }
+  .updated {
+    font-size: 12px;
+    color: var(--muted);
+    margin: 0 0 32px;
+  }
+  h2 {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 500;
+    font-size: 19px;
+    margin: 36px 0 12px;
+    color: var(--ink);
+  }
+  p, li { color: var(--ink); font-size: 15px; }
+  p.muted { color: var(--muted); font-size: 14px; }
+  .summary {
+    background: var(--sage-soft);
+    border-radius: 18px;
+    padding: 20px 22px;
+    margin: 24px 0 8px;
+  }
+  .summary p {
+    margin: 0;
+    font-size: 15px;
+    color: var(--ink);
+  }
+  ul { padding-left: 20px; }
+  li { margin-bottom: 8px; }
+  .contact-card {
+    background: var(--plum-soft);
+    border-radius: 18px;
+    padding: 22px 24px;
+    margin-top: 8px;
+  }
+  .contact-card p {
+    font-size: 14px;
+    color: var(--ink);
+    margin: 0 0 12px;
+  }
+  .contact-card a.button {
+    display: inline-block;
+    background: var(--plum);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 11px 18px;
+    border-radius: 12px;
+  }
+  a { color: var(--plum); }
+  footer {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    font-size: 12px;
+    color: var(--muted);
+  }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <div class="mark" aria-hidden="true">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 34 C 40 34, 52 34, 60 66 C 64 82, 72 76, 76 66"
+                fill="none" stroke="#F1EBDF" stroke-width="9" stroke-linecap="round"/>
+          <circle cx="76" cy="66" r="8.5" fill="#F1EBDF"/>
+        </svg>
+      </div>
+      <div>
+        <h1>Form — Privatlivspolitik</h1>
+        <p>Kost-, vægt- og kropsapp · form frem for tal</p>
+      </div>
+    </header>
+    <p class="updated">Sidst opdateret: 12. august 2026</p>
+
+    <div class="summary">
+      <p>
+        Kort fortalt: dine data er dine egne. De gemmes på din egen telefon og
+        synkroniseres udelukkende via din egen iCloud-konto — vi har ingen egen
+        server, og vi kan ikke se dine data. Det eneste, der bliver synligt for
+        andre, er det du selv aktivt vælger at dele.
+      </p>
+    </div>
+
+    <h2>Hvilke data behandler Form</h2>
+    <p>Form gemmer det, du selv indtaster: mål og målepunkter, mad- og væskelog,
+       skabeloner og ugeplaner, træningsprogrammer og -historik, og indstillinger
+       som mål-type og målefrekvens. Ingen af disse data kræver en konto hos os —
+       Form opretter aldrig en brugerprofil på en server, vi ejer.</p>
+
+    <h2>Hvor gemmes dine data</h2>
+    <ul>
+      <li><strong>iCloud (din egen konto):</strong> mål, mad, væske, træning, ugeplaner
+        og indstillinger synkroniseres via Apples private CloudKit-database, knyttet
+        til din egen iCloud-konto. Kun du (og enheder logget ind med din Apple-ID)
+        kan tilgå dem — vi har ikke adgang.</li>
+      <li><strong>Kun på din enhed:</strong> fremskridtsbilleder gemmes udelukkende
+        lokalt på din telefon, låst bag Face ID/Touch ID. De uploades aldrig —
+        heller ikke til iCloud.</li>
+      <li><strong>Apple Sundhed (HealthKit):</strong> hvis du giver adgang, læser og
+        skriver Form vægt, mål, vand, træning, søvn og aktivitet til Sundhed-appen,
+        så data kan deles med dit eget ur/band eller andre sundhedsapps du bruger.
+        Det sker direkte mellem Form og Apples Sundhed-ramme på din enhed — vi
+        modtager ikke selv disse data nogen steder.</li>
+    </ul>
+
+    <h2>Deling med andre brugere (valgfrit)</h2>
+    <p>Opretter du en egen fødevare, kan du vælge at dele den, så andre Form-brugere
+       kan finde og bruge den — kun navn og næringsindhold bliver synligt, aldrig
+       hvem der oprettede den, og det sker kun hvis du selv slår det til. Alt andet
+       i appen er privat som standard.</p>
+
+    <h2>Tredjepartstjenester</h2>
+    <ul>
+      <li><strong>Den Danske Fødevaredatabase (Frida):</strong> et datasæt der ligger
+        i selve appen — ingen data sendes nogen steder for at slå en fødevare op her.</li>
+      <li><strong>Open Food Facts:</strong> når du scanner en stregkode eller søger
+        efter en pakkevare, sendes søgeteksten/stregkoden til Open Food Facts'
+        offentlige database (openfoodfacts.org, ODbL-licenseret) for at finde varen.
+        Ingen personlige oplysninger sendes med i det opslag.</li>
+      <li><strong>Fotogenkendelse af måltider:</strong> som udgangspunkt køres denne
+        helt på din egen telefon. Vælger du selv at tilføje din egen Claude- eller
+        OpenAI-nøgle for bedre genkendelse, bliver billedet af din tallerken i
+        stedet sendt direkte til den udbyder (Anthropic eller OpenAI) med din egen
+        nøgle — det er dit valg, og du kan til enhver tid fjerne nøglen igen.</li>
+    </ul>
+
+    <h2>Annoncer og sporing</h2>
+    <p>Form viser ingen annoncer og indeholder ingen tredjeparts analyse- eller
+       sporingsværktøjer.</p>
+
+    <h2>Sådan sletter du dine data</h2>
+    <p>Under Profil i appen kan du til enhver tid slette alt permanent — både fra
+       iCloud og fra din enhed. Handlingen kan ikke fortrydes.</p>
+
+    <h2>Børn</h2>
+    <p>Form er ikke rettet mod børn under 13 år.</p>
+
+    <h2>Ændringer i denne politik</h2>
+    <p>Bliver denne politik opdateret væsentligt, opdaterer vi datoen øverst på
+       siden. Store ændringer vil også fremgå af app-opdateringens "Hvad er nyt".</p>
+
+    <h2>Kontakt</h2>
+    <div class="contact-card">
+      <p>Spørgsmål til denne politik eller til dine data er altid velkomne.</p>
+      <a class="button" href="mailto:myappsdk@proton.me?subject=Form%20–%20privatliv">
+        Skriv til myappsdk@proton.me
+      </a>
+    </div>
+
+    <footer>
+      <a href="index.html">← Tilbage til Support</a>
+    </footer>
+  </div>
+</body>
+</html>
