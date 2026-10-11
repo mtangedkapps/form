@@ -149,7 +149,7 @@
         <p>Kost-, vægt- og kropsapp · form frem for tal</p>
       </div>
     </header>
-    <p class="updated">Sidst opdateret: 12. august 2026</p>
+    <p class="updated">Sidst opdateret: 11. oktober 2026</p>
 
     <div class="summary">
       <p>
@@ -162,8 +162,9 @@
 
     <h2>Hvilke data behandler Form</h2>
     <p>Form gemmer det, du selv indtaster: mål og målepunkter, mad- og væskelog,
-       skabeloner og ugeplaner, træningsprogrammer og -historik, og indstillinger
-       som mål-type og målefrekvens. Ingen af disse data kræver en konto hos os —
+       skabeloner og ugeplaner, træningsprogrammer og -historik, cykelture, dine
+       træningssteder og dit udstyr, hvilepuls og resultatet af cykeltesten, og
+       indstillinger som mål-type og målefrekvens. Ingen af disse data kræver en konto hos os —
        Form opretter aldrig en brugerprofil på en server, vi ejer.</p>
 
     <h2>Hvor gemmes dine data</h2>
@@ -196,11 +197,27 @@
         efter en pakkevare, sendes søgeteksten/stregkoden til Open Food Facts'
         offentlige database (openfoodfacts.org, ODbL-licenseret) for at finde varen.
         Ingen personlige oplysninger sendes med i det opslag.</li>
-      <li><strong>Fotogenkendelse af måltider:</strong> som udgangspunkt køres denne
-        helt på din egen telefon. Vælger du selv at tilføje din egen Claude- eller
-        OpenAI-nøgle for bedre genkendelse, bliver billedet af din tallerken i
-        stedet sendt direkte til den udbyder (Anthropic eller OpenAI) med din egen
-        nøgle — det er dit valg, og du kan til enhver tid fjerne nøglen igen.</li>
+      <li><strong>AI-funktioner (valgfrit, med din egen nøgle):</strong> fotogenkendelse
+        af måltider køres som udgangspunkt helt på din egen telefon. Vælger du selv at
+        tilføje en nøgle til Claude (Anthropic), ChatGPT (OpenAI) eller Gemini (Google),
+        sendes data direkte fra din telefon til den udbyder du har valgt — aldrig via os:
+        <ul>
+          <li>Tallerken-genkendelse: billedet af din tallerken.</li>
+          <li>Spis ude, opskrifter og madplan: retten eller opskriftsteksten du indtaster,
+            og til madplanen dit kaloriemål og de kostønsker du har skrevet.</li>
+          <li>Træningsprogram: dine valgte dage, dit udstyr, dit niveau, eventuelle skader
+            eller begrænsninger du har skrevet, faste hold og cykeldage samt din
+            tærskelkadence fra cykeltesten.</li>
+          <li>Coach: et kort resumé af dine tal (ikke dine enkelte logs) og dine beskeder.</li>
+        </ul>
+        Udbyderen behandler data efter sine egne vilkår for API-brug. Nøglen gemmes kun i
+        nøgleringen på din telefon, og du kan til enhver tid fjerne den igen under
+        Profil → AI-opsætning.</li>
+      <li><strong>Bluetooth-sensorer (valgfrit):</strong> forbinder du en kadence-sensor
+        eller pulsmåler, læser Form målingerne direkte fra sensoren på din telefon.
+        Puls bruges kun til at styre cykeltræningen og beregne forbrændte kalorier, og
+        selve pulsmålingerne gemmes ikke — kun resultatet (fx varighed, kalorier og
+        gennemsnitlig kadence) gemmes med træningen.</li>
     </ul>
 
     <h2>Annoncer og sporing</h2>
@@ -209,7 +226,9 @@
 
     <h2>Sådan sletter du dine data</h2>
     <p>Under Profil i appen kan du til enhver tid slette alt permanent — både fra
-       iCloud og fra din enhed. Handlingen kan ikke fortrydes.</p>
+       iCloud og fra din enhed, inklusive dine AI-nøgler og forbundne sensorer.
+       Handlingen kan ikke fortrydes. Data du selv har sendt til Apple Sundhed,
+       slettes i Sundhed-appen.</p>
 
     <h2>Børn</h2>
     <p>Form er ikke rettet mod børn under 13 år.</p>
