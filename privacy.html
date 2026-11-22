@@ -149,7 +149,7 @@
         <p>Kost, mål og træning · form frem for tal</p>
       </div>
     </header>
-    <p class="updated">Sidst opdateret: 11. oktober 2026</p>
+    <p class="updated">Sidst opdateret: 22. november 2026</p>
 
     <div class="summary">
       <p>
@@ -162,8 +162,9 @@
 
     <h2>Hvilke data behandler Form</h2>
     <p>Form gemmer det, du selv indtaster: mål og målepunkter, mad- og væskelog,
-       skabeloner og ugeplaner, træningsprogrammer og -historik, cykelture, dine
-       træningssteder og dit udstyr, hvilepuls og resultatet af cykeltesten, og
+       skabeloner og ugeplaner, træningsprogrammer og -historik, dine
+       træningssteder og dit udstyr, dine daglige aftaler i Makker (hvad du aftalte,
+       om du holdt den, og din energi bagefter), og
        indstillinger som mål-type og målefrekvens. Ingen af disse data kræver en konto hos os —
        Form opretter aldrig en brugerprofil på en server, vi ejer.</p>
 
@@ -173,13 +174,41 @@
         og indstillinger synkroniseres via Apples private CloudKit-database, knyttet
         til din egen iCloud-konto. Kun du (og enheder logget ind med din Apple-ID)
         kan tilgå dem — vi har ikke adgang.</li>
-      <li><strong>Kun på din enhed:</strong> fremskridtsbilleder gemmes udelukkende
-        lokalt på din telefon, låst bag Face ID/Touch ID. De uploades aldrig —
-        heller ikke til iCloud.</li>
+      <li><strong>Kun på din enhed:</strong> fremskridtsbilleder og -videoer gemmes
+        udelukkende lokalt på din telefon, låst bag Face ID/Touch ID. De uploades aldrig —
+        heller ikke til iCloud — og er ikke med i telefonens backup. Vælger du selv at gemme
+        en kopi fra appen, bestemmer du, hvor den lægges.</li>
+      <li><strong>Sikkerhedskopi (valgfrit):</strong> laver du en sikkerhedskopi under
+        Profil, samler Form dine data i én fil på telefonen, som du selv gemmer — fx i Filer
+        eller iCloud Drive. Form sender den ingen steder hen. Gendanner du fra en kopi,
+        erstatter den dine nuværende data, også i din iCloud.</li>
+      <li><strong>Makker — kun på din enhed:</strong> dine daglige aftaler og
+        indstillinger gemmes kun på telefonen og synkroniseres ikke. Vælger du at gemme
+        dit hjem, beder Form om adgang til din placering, mens appen er åben, og læser den
+        én gang. Herefter bruger iPhone selv den gemte placering til at give dig en besked,
+        når du kommer hjem. Form følger ikke din position, og placeringen forlader aldrig
+        telefonen. Du kan fjerne den igen under Makkers indstillinger.</li>
+      <li><strong>Tale til Makker:</strong> taler du til Makker, beder Form om adgang til
+        mikrofon og talegenkendelse. Lyden omsættes til tekst af Apples talegenkendelse —
+        på selve telefonen, når den understøtter det; ellers hos Apple efter Apples egne
+        vilkår. Lyden gemmes ikke af Form, og kun den færdige tekst sendes videre til den
+        AI-udbyder, du har valgt.</li>
+      <li><strong>Del-mappe med Claude (valgfrit):</strong> vælger du selv en mappe under
+        Makker → Del-mappe med Claude, skriver Form dit kaloriemål, protein, kostønsker,
+        Makkers ugemål, antal aftaler, dine ugeplaner og indkøbsliste i den mappe — og læser
+        en madplan, du eller Claude lægger der. Mappen er din egen (fx i iCloud Drive), og
+        Form sender intet til os. Hvad Claude på din computer gør med mappen, styrer du selv.</li>
+      <li><strong>Widget og Siri:</strong> Makker-widgetten viser dagens aftale og point fra
+        en lille fil på telefonen. Siri-kommandoerne kører på telefonen; det du siger til
+        "Fortæl Makker", vises i Form, før noget bliver logget.</li>
+      <li><strong>Importerede træningsplaner:</strong> åbner du et regneark med en
+        træningsplan i Form, læses filen på din telefon og gemmes som dine egne programmer.
+        Filen sendes ingen steder hen.</li>
       <li><strong>Apple Sundhed (HealthKit):</strong> hvis du giver adgang, læser og
         skriver Form vægt, mål, vand, træning, søvn og aktivitet til Sundhed-appen,
         så data kan deles med dit eget ur/band eller andre sundhedsapps du bruger.
-        Det sker direkte mellem Form og Apples Sundhed-ramme på din enhed — vi
+        Sletter eller retter du et måltid i Form, fjerner eller opdaterer Form også den
+        registrering, appen selv har skrevet til Sundhed. Det sker direkte mellem Form og Apples Sundhed-ramme på din enhed — vi
         modtager ikke selv disse data nogen steder.</li>
     </ul>
 
@@ -195,7 +224,8 @@
         i selve appen — ingen data sendes nogen steder for at slå en fødevare op her.</li>
       <li><strong>Open Food Facts:</strong> når du scanner en stregkode eller søger
         efter en pakkevare, sendes søgeteksten/stregkoden til Open Food Facts'
-        offentlige database (openfoodfacts.org, ODbL-licenseret) for at finde varen.
+        offentlige database og søgetjeneste (openfoodfacts.org, ODbL-licenseret) for at
+        finde varen.
         Ingen personlige oplysninger sendes med i det opslag.</li>
       <li><strong>AI-funktioner (valgfrit, med din egen nøgle):</strong> fotogenkendelse
         af måltider køres som udgangspunkt helt på din egen telefon. Vælger du selv at
@@ -206,18 +236,27 @@
           <li>Spis ude, opskrifter og madplan: retten eller opskriftsteksten du indtaster,
             og til madplanen dit kaloriemål og de kostønsker du har skrevet.</li>
           <li>Træningsprogram: dine valgte dage, dit udstyr, dit niveau, eventuelle skader
-            eller begrænsninger du har skrevet, faste hold og cykeldage samt din
-            tærskelkadence fra cykeltesten.</li>
-          <li>Coach: et kort resumé af dine tal (ikke dine enkelte logs) og dine beskeder.</li>
+            eller begrænsninger du har skrevet, faste hold samt ønsket træningstid og
+            antal øvelser.</li>
+          <li>Coach: et kort resumé af dine tal (ikke dine enkelte logs), dine seneste
+            aftaler i Makker (holdt eller ej, energi og point) og dine beskeder.</li>
+          <li>Makker: når du laver dagens aftale, sendes aftalen og det samme korte
+            resumé, så coachen kan skrive dagens beskeder til dig. Din placering sendes aldrig.</li>
+          <li>Fortæl Makker: den tekst du skriver eller dikterer (fx "to æg og en gåtur"),
+            så Makker kan omsætte den til registreringer, som du selv godkender.</li>
+          <li>Hvad skal jeg spise nu?: hvor mange kalorier og hvor meget protein du har tilbage
+            i dag, navnene på dagens planlagte og senest loggede retter, dine kostønsker og
+            dit eventuelle ønske.</li>
+          <li>Søndagsregnskab: ugens samlede tal (fx protein-dage, træninger, søvn og
+            vægtændring) og resuméet af dine aftaler.</li>
         </ul>
         Udbyderen behandler data efter sine egne vilkår for API-brug. Nøglen gemmes kun i
         nøgleringen på din telefon, og du kan til enhver tid fjerne den igen under
         Profil → AI-opsætning.</li>
-      <li><strong>Bluetooth-sensorer (valgfrit):</strong> forbinder du en kadence-sensor
-        eller pulsmåler, læser Form målingerne direkte fra sensoren på din telefon.
-        Puls bruges kun til at styre cykeltræningen og beregne forbrændte kalorier, og
-        selve pulsmålingerne gemmes ikke — kun resultatet (fx varighed, kalorier og
-        gennemsnitlig kadence) gemmes med træningen.</li>
+      <li><strong>Bluetooth-pulsmåler (valgfrit):</strong> forbinder du en pulsmåler,
+        læser Form målingerne direkte fra sensoren på din telefon. Puls bruges kun til at
+        beregne forbrændte kalorier under træning, og selve pulsmålingerne gemmes ikke —
+        kun resultatet (fx varighed og kalorier) gemmes med træningen.</li>
     </ul>
 
     <h2>Annoncer og sporing</h2>
@@ -226,9 +265,12 @@
 
     <h2>Sådan sletter du dine data</h2>
     <p>Under Profil i appen kan du til enhver tid slette alt permanent — både fra
-       iCloud og fra din enhed, inklusive dine AI-nøgler og forbundne sensorer.
-       Handlingen kan ikke fortrydes. Data du selv har sendt til Apple Sundhed,
-       slettes i Sundhed-appen.</p>
+       iCloud og fra din enhed, inklusive dine AI-nøgler, forbundne sensorer og
+       Makkers aftaler og påmindelser. Du kan også vælge kun at slette udvalgte dele,
+       fx madlog, vægt, fremskridtsbilleder eller træninger.
+       Handlingen kan ikke fortrydes. Sletter du din madlog, fjernes også de
+       madregistreringer, Form selv har skrevet til Apple Sundhed. Øvrige data, Form har
+       sendt til Sundhed (fx vægt, vand og træning), slettes i Sundhed-appen.</p>
 
     <h2>Børn</h2>
     <p>Form er ikke rettet mod børn under 13 år.</p>
